@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <Title>Scrolling Nav</Title>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">logo</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Prices</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <section class="banner"></section>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+    </body>
+</html>
